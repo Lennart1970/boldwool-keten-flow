@@ -4,18 +4,50 @@ export default {
   theme: {
     extend: {
       colors: {
-        wool: {
-          ink: '#1c1917',
-          paper: '#fafaf9',
-          mist: '#f5f5f4',
-          line: '#d6d3d1',
-          amber: '#d97706',
-          deep: '#92400e',
+        paper: {
+          DEFAULT: '#F9F7F2',
+          soft: '#FDFCFB',
         },
+        ink: {
+          DEFAULT: '#1A2E2A',
+          muted: '#3D4F4A',
+          faint: '#5A6B66',
+        },
+        forest: {
+          DEFAULT: '#2D4F43',
+          deep: '#243F36',
+        },
+        terracotta: {
+          DEFAULT: '#B05C3D',
+          soft: '#C4785A',
+        },
+        beat: {
+          1: '#B05C3D',
+          2: '#8B5E3C',
+          3: '#5C6B3A',
+          4: '#2D4F43',
+          5: '#3D5A6B',
+        },
+        line: '#E4DFD6',
+        chip: '#F3F0EA',
       },
       fontFamily: {
-        display: ['"Syne"', 'system-ui', 'sans-serif'],
-        sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+        sans: [
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
+        ],
+      },
+      borderRadius: {
+        card: '14px',
+      },
+      boxShadow: {
+        card: '0 1px 2px rgba(26, 46, 42, 0.04), 0 8px 24px rgba(26, 46, 42, 0.06)',
       },
       keyframes: {
         'fade-up': {
